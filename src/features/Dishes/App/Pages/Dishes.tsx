@@ -1,7 +1,14 @@
+import Loader from "../../../../core/components/Loader"
 
-function Dishes() {
+function Dishes(props: any) {
   return (
-    <div>Dishes</div>
+    <div>
+        {
+            props.loader && (
+                <Loader />
+            )
+        }
+    </div>
   )
 }
 
